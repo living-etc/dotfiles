@@ -1,0 +1,5 @@
+#! /bin/zsh
+
+for file in '.zshrc' '.vimrc' '.gitconfig' '.tmux.conf' '.gemrc'; do
+  ln -sf `pwd`/$file ~/$file;
+done
