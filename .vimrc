@@ -28,5 +28,6 @@ set expandtab
 set hlsearch
 set colorcolumn=80
 set nowrap
+set backspace=indent,eol,start
 
 map <CR> :noh<CR>
