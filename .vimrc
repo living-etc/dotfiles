@@ -27,5 +27,6 @@ set shiftwidth=2
 set expandtab
 set hlsearch
 set colorcolumn=80
+set nowrap
 
 map <CR> :noh<CR>
