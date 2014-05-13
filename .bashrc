@@ -8,10 +8,12 @@ reset="\e[0m"
 red="\e[0;31m"
 blue="\e[0;34m"
 cyan="\e[0;36m"
+green="\e[0;32m"
 dir="\w"
 branch="\$(__git_ps1)"
+ruby="(\$(rvm-prompt v))"
 
-PS1="$red$dir$reset$cyan$branch$reset $ "
+PS1="$red$dir$reset $green$ruby$reset$cyan$branch$reset $ "
 
 alias ls='ls -G'
 alias grep='grep --color=always --exclude="*.swp"'
