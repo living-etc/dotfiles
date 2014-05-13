@@ -3,7 +3,7 @@ alias phone_number='cd ~/Code/otb_www_app/current; echo -n "price: ";read price;
 
 PATH=$PATH:$HOME/.rvm/bin
 
-PS1='%~ $ '
+export PS1="\w $ "
 
 alias ls='ls -G'
 alias grep='grep --color=always --exclude="*.swp"'
