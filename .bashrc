@@ -8,3 +8,7 @@ export PS1="\w $ "
 
 alias ls='ls -G'
 alias grep='grep --color=always --exclude="*.swp"'
+
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
