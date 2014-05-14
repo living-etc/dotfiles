@@ -23,3 +23,5 @@ source /Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
+
+export EDITOR="vim"
