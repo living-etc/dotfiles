@@ -17,6 +17,7 @@ PS1="$red$dir$reset $green$ruby$reset$cyan$branch$reset $ "
 
 alias ls='ls -G'
 alias grep='grep --color=always --exclude="*.swp"'
+alias gs='git status -sb'
 
 source /Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh
 
