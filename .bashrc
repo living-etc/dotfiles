@@ -4,11 +4,11 @@ alias phone_number='cd ~/Code/otb_www_app/current; echo -n "price: ";read price;
 PATH=$PATH:$HOME/.rvm/bin
 source ~/.rvm/scripts/rvm
 
-reset="\e[0m"
-red="\e[0;31m"
-blue="\e[0;34m"
-cyan="\e[0;36m"
-green="\e[0;32m"
+reset="\[\e[0m\]"
+red="\[\e[0;31m\]"
+blue="\[\e[0;34m\]"
+cyan="\[\e[0;36m\]"
+green="\[\e[0;32m\]"
 dir="\w"
 branch="\$(__git_ps1)"
 ruby="(\$(rvm-prompt v))"
