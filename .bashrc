@@ -16,7 +16,7 @@ ruby="(\$(rvm-prompt v))"
 PS1="$red$dir$reset $green$ruby$reset$cyan$branch$reset\n$ "
 
 alias ls='ls -G'
-alias grep='grep --color=always --exclude="*.swp"'
+alias grep='grep --color=always --exclude="*.swp" --exclude-dir={.git,vendor}'
 alias gs='git status -sb'
 
 source /Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh
