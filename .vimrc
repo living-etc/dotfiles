@@ -32,3 +32,6 @@ set backspace=indent,eol,start
 set textwidth=80
 
 map <CR> :noh<CR>
+
+autocmd BufNewFile,BufRead Gemfile set filetype=ruby
+autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
