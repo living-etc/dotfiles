@@ -6,6 +6,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
   Plugin 'gmarik/vundle'
   Plugin 'thoughtbot/vim-rspec'
+  Plugin 'elzr/vim-json'
 call vundle#end()
 filetype plugin indent on
 
