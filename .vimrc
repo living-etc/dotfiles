@@ -7,6 +7,7 @@ call vundle#begin()
   Plugin 'gmarik/vundle'
   Plugin 'thoughtbot/vim-rspec'
   Plugin 'elzr/vim-json'
+  Plugin 'junegunn/limelight.vim'
 call vundle#end()
 filetype plugin indent on
 
@@ -21,6 +22,9 @@ map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+
+let g:limelight_conceal_ctermfg = 240
+autocmd VimEnter * Limelight
 
 set visualbell
 set tabstop=2
