@@ -34,6 +34,7 @@ set hlsearch
 set colorcolumn=80
 set nowrap
 set backspace=indent,eol,start
+set cursorline
 
 map <CR> :noh<CR>
 
