@@ -40,6 +40,7 @@ map <CR> :noh<CR>
 
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
 autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
+autocmd BufNewFile,BufRead Puppetfile set filetype=ruby
 autocmd Filetype gitcommit setlocal spell textwidth=72
 au BufRead,BufNewFile *.md setlocal spell textwidth=80
 
