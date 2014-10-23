@@ -45,6 +45,8 @@ autocmd BufNewFile,BufRead Puppetfile set filetype=ruby
 autocmd Filetype gitcommit setlocal spell textwidth=72
 au BufRead,BufNewFile *.md setlocal spell textwidth=80 filetype=markdown
 
+com! FormatJSON %!python -m json.tool
+
 noremap   <Up>     <NOP>
 noremap   <Down>   <NOP>
 noremap   <Left>   <NOP>
