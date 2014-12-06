@@ -20,8 +20,8 @@ ruby="(\$(rvm-prompt v))"
 
 PS1="$red$dir$reset $green$ruby$reset$cyan$branch$reset\n$ "
 
-alias grep='grep --color=always --exclude={*.swp,*.swo} --exclude-dir={.git,vendor}'
-alias ls='ls --color=always'
+alias grep='grep -G --exclude={*.swp,*.swo} --exclude-dir={.git,vendor}'
+alias ls='ls -G'
 alias gs='git status -sb'
 
 source /Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh
@@ -31,5 +31,3 @@ if [ -f ~/.git-completion.bash ]; then
 fi
 
 export EDITOR="vim"
-
-export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
