@@ -34,7 +34,7 @@ set hlsearch
 set colorcolumn=80
 set nowrap
 set backspace=indent,eol,start
-set ai
+set autoindent
 set scrolloff=9999
 
 map <CR> :noh<CR>
