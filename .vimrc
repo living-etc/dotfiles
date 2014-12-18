@@ -56,3 +56,5 @@ map       <CR>     :noh<CR>
 
 " Aliases
 com! FormatJSON %!python -m json.tool
+
+match ErrorMsg '\s\+$'
