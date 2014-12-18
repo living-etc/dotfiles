@@ -23,9 +23,11 @@ map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
+" Limelight settings
 let g:limelight_conceal_ctermfg = 240
 autocmd VimEnter * Limelight
 
+" Settings
 set visualbell
 set tabstop=2
 set shiftwidth=2
@@ -37,17 +39,20 @@ set backspace=indent,eol,start
 set autoindent
 set scrolloff=9999
 
-map <CR> :noh<CR>
-
+" Filetype handling
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
 autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
 autocmd BufNewFile,BufRead Puppetfile set filetype=ruby
 autocmd BufNewFile,BufRead *.md setlocal spell textwidth=80 filetype=markdown
+autocmd BufNewFile,BufRead *.feature setlocal spell textwidth=80
 autocmd Filetype gitcommit setlocal spell textwidth=72
 
-com! FormatJSON %!python -m json.tool
-
+" Keymappings
 noremap   <Up>     <NOP>
 noremap   <Down>   <NOP>
 noremap   <Left>   <NOP>
 noremap   <Right>  <NOP>
+map       <CR>     :noh<CR>
+
+" Aliases
+com! FormatJSON %!python -m json.tool
