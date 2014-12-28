@@ -43,6 +43,7 @@ set scrolloff=9999
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
 autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
 autocmd BufNewFile,BufRead Puppetfile set filetype=ruby
+autocmd BufNewFile,BufRead *.ru set filetype=ruby
 autocmd BufNewFile,BufRead *.md setlocal spell textwidth=80 filetype=markdown
 autocmd BufNewFile,BufRead *.feature setlocal spell textwidth=80
 autocmd Filetype gitcommit setlocal spell textwidth=72
