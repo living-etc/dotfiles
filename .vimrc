@@ -8,6 +8,7 @@ call vundle#begin()
   Plugin 'thoughtbot/vim-rspec'
   Plugin 'elzr/vim-json'
   Plugin 'junegunn/limelight.vim'
+  Plugin 'tpope/vim-cucumber'
 call vundle#end()
 filetype plugin indent on
 
@@ -45,7 +46,7 @@ autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
 autocmd BufNewFile,BufRead Puppetfile set filetype=ruby
 autocmd BufNewFile,BufRead *.ru set filetype=ruby
 autocmd BufNewFile,BufRead *.md setlocal spell textwidth=80 filetype=markdown
-autocmd BufNewFile,BufRead *.feature setlocal spell textwidth=80
+autocmd BufNewFile,BufRead *.feature setlocal spell textwidth=80 filetype=gherkin
 autocmd Filetype gitcommit setlocal spell textwidth=72
 
 " Keymappings
