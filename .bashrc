@@ -1,11 +1,3 @@
-if [[ -f ~/.otb/otb.sh ]]; then
-  source ~/.otb/otb.sh
-fi
-
-if [[ -f ~/.otb_bashrc ]]; then
-  source ~/.otb_bashrc
-fi
-
 PATH=$PATH:$HOME/.rvm/bin
 source ~/.rvm/scripts/rvm
 
