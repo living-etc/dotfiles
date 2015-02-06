@@ -12,7 +12,7 @@ ruby="(\$(rvm-prompt v))"
 
 PS1="$red$dir$reset $green$ruby$reset$cyan$branch$reset\n$ "
 
-alias grep='grep --color=always --exclude={*.swp,*.swo} --exclude-dir={.git,vendor}'
+alias grep='grep --color=always'
 alias ls='ls -G'
 alias gs='git status -sb'
 
