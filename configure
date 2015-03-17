@@ -1,5 +1,5 @@
 #! /bin/zsh
 
-for file in '.inputrc' '.bash_profile' '.bashrc' '.vimrc' '.gitconfig' '.tmux.conf' '.gemrc'; do
+for file in '.inputrc' '.bash_profile' '.bashrc' '.vimrc' '.gitconfig' '.tmux.conf' '.gemrc' '.rspec'; do
   ln -sf `pwd`/$file ~/$file;
 done
