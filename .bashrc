@@ -23,3 +23,6 @@ if [ -f ~/.git-completion.bash ]; then
 fi
 
 export EDITOR="vim"
+
+export GOPATH=~/Dropbox/Projects/go
+export PATH=$PATH:$GOPATH/bin
