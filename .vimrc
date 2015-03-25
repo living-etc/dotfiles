@@ -9,6 +9,7 @@ call vundle#begin()
   Plugin 'elzr/vim-json'
   Plugin 'junegunn/limelight.vim'
   Plugin 'tpope/vim-cucumber'
+  Plugin 'fatih/vim-go'
 call vundle#end()
 filetype plugin indent on
 
