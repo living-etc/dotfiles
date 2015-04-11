@@ -1,5 +1,9 @@
 #! /bin/zsh
 
 for file in '.inputrc' '.bash_profile' '.bashrc' '.vimrc' '.gitconfig' '.tmux.conf' '.gemrc' '.rspec'; do
+  if [ -f ~/$file ];
+  then
+    rm ~/$file
+  fi
   ln -sf `pwd`/$file ~/$file;
 done
