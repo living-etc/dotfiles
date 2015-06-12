@@ -62,3 +62,4 @@ map       <CR>     :noh<CR>
 com! FormatJSON %!python -m json.tool
 
 match ErrorMsg '\s\+$'
+map <leader>c :%s/\s\+$//<CR>
