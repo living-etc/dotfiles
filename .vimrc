@@ -10,6 +10,7 @@ call vundle#begin()
   Plugin 'junegunn/limelight.vim'
   Plugin 'tpope/vim-cucumber'
   Plugin 'fatih/vim-go'
+  Plugin 'ekalinin/Dockerfile.vim'
 call vundle#end()
 filetype plugin indent on
 
