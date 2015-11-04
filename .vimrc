@@ -11,6 +11,7 @@ call vundle#begin()
   Plugin 'tpope/vim-cucumber'
   Plugin 'fatih/vim-go'
   Plugin 'ekalinin/Dockerfile.vim'
+  Plugin 'elixir-lang/vim-elixir'
 call vundle#end()
 filetype plugin indent on
 
