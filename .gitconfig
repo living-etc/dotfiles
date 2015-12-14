@@ -8,3 +8,5 @@
   excludesfile = ~/.gitignore
 [push]
   default = nothing
+[commit]
+  template = ~/.gitmessage

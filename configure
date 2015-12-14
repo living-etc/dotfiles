@@ -1,6 +1,6 @@
 #! /bin/zsh
 
-for file in '.inputrc' '.bash_profile' '.bashrc' '.vimrc' '.gitconfig' '.tmux.conf' '.gemrc' '.rspec'; do
+for file in '.inputrc' '.bash_profile' '.bashrc' '.vimrc' '.gitconfig' '.tmux.conf' '.gemrc' '.rspec' '.gitmessage'; do
   if [ -f ~/$file ];
   then
     rm ~/$file
