@@ -43,6 +43,7 @@ set backspace=indent,eol,start
 set autoindent
 set scrolloff=9999
 set ignorecase
+set incsearch
 
 " Filetype handling
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
