@@ -11,6 +11,7 @@ call vundle#begin()
   Plugin 'fatih/vim-go'
   Plugin 'ekalinin/Dockerfile.vim'
   Plugin 'elixir-lang/vim-elixir'
+  Plugin 'kien/ctrlp.vim'
 call vundle#end()
 filetype plugin indent on
 
