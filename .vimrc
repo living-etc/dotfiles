@@ -7,7 +7,6 @@ call vundle#begin()
   Plugin 'gmarik/vundle'
   Plugin 'thoughtbot/vim-rspec'
   Plugin 'elzr/vim-json'
-  Plugin 'junegunn/limelight.vim'
   Plugin 'tpope/vim-cucumber'
   Plugin 'fatih/vim-go'
   Plugin 'ekalinin/Dockerfile.vim'
@@ -26,10 +25,6 @@ map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
-
-" Limelight settings
-let g:limelight_conceal_ctermfg = 240
-autocmd VimEnter * Limelight
 
 " Settings
 set visualbell
