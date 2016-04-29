@@ -63,5 +63,3 @@ com! FormatJSON %!python -m json.tool
 
 match ErrorMsg '\s\+$'
 map <leader>c :%s/\s\+$//<CR>
-
-let g:go_fmt_autosave = 0
