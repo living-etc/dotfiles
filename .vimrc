@@ -12,6 +12,7 @@ call vundle#begin()
   Plugin 'ekalinin/Dockerfile.vim'
   Plugin 'elixir-lang/vim-elixir'
   Plugin 'kien/ctrlp.vim'
+  Plugin 'altercation/vim-colors-solarized'
 call vundle#end()
 filetype plugin indent on
 
