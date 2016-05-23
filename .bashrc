@@ -24,7 +24,7 @@ fi
 
 export EDITOR="vim"
 
-export GOPATH=~/Dropbox/Projects/go
+export GOPATH=~/Projects/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
 
