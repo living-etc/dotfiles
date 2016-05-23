@@ -5,7 +5,6 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
   Plugin 'gmarik/vundle'
-  Plugin 'thoughtbot/vim-rspec'
   Plugin 'elzr/vim-json'
   Plugin 'tpope/vim-cucumber'
   Plugin 'fatih/vim-go'
@@ -13,6 +12,7 @@ call vundle#begin()
   Plugin 'elixir-lang/vim-elixir'
   Plugin 'kien/ctrlp.vim'
   Plugin 'altercation/vim-colors-solarized'
+  Plugin 'janko-m/vim-test'
 call vundle#end()
 filetype plugin indent on
 
@@ -22,11 +22,12 @@ set background=dark
 colorscheme solarized
 call togglebg#map("<F5>")
 
-" RSpec.vim mappings
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
+" Test.vim mappings
+nmap <silent> <leader>t :TestNearest<CR>
+nmap <silent> <leader>T :TestFile<CR>
+nmap <silent> <leader>a :TestSuite<CR>
+nmap <silent> <leader>l :TestLast<CR>
+nmap <silent> <leader>g :TestVisit<CR>
 
 " Settings
 set visualbell
