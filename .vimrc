@@ -53,6 +53,9 @@ autocmd BufNewFile,BufRead *.feature setlocal spell textwidth=80 filetype=gherki
 autocmd BufNewFile,BufRead *.tex setlocal spell textwidth=80
 autocmd Filetype gitcommit setlocal spell textwidth=72
 
+" vim-json conig
+let g:vim_json_syntax_conceal = 0
+
 " Keymappings
 noremap   <Up>     <NOP>
 noremap   <Down>   <NOP>
