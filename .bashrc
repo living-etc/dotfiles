@@ -18,8 +18,8 @@ alias gs='git status -sb'
 
 source /Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh
 
-if [ -f ~/.git-completion.bash ]; then
-  . ~/.git-completion.bash
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
 fi
 
 export EDITOR="vim"
