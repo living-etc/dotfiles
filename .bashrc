@@ -28,11 +28,6 @@ export GOPATH=~/Projects/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
 
-export DOCKER_HOST="tcp://192.168.99.100:2376"
-export DOCKER_CERT_PATH="~/.docker/machine/machines/docker-vm"
-export DOCKER_TLS_VERIFY="1"
-export DOCKER_MACHINE_NAME="docker-vm"
-
 export PATH="$PATH:./node_modules/.bin/"
 export NVM_DIR="/Users/$USER/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
