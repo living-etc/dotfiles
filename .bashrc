@@ -32,4 +32,5 @@ export PATH="$PATH:./node_modules/.bin/"
 export NVM_DIR="/Users/$USER/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 export NVM_DIR="$HOME/.nvm"
-. "$(brew --prefix nvm)/nvm.sh"
+
+export PATH="$PATH:./node_modules/.bin/"
