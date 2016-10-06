@@ -13,6 +13,7 @@ call vundle#begin()
   Plugin 'kien/ctrlp.vim'
   Plugin 'altercation/vim-colors-solarized'
   Plugin 'janko-m/vim-test'
+  Plugin 'slim-template/vim-slim'
 call vundle#end()
 filetype plugin indent on
 
