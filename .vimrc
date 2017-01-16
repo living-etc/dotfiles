@@ -14,6 +14,7 @@ call vundle#begin()
   Plugin 'altercation/vim-colors-solarized'
   Plugin 'janko-m/vim-test'
   Plugin 'slim-template/vim-slim'
+  Plugin 'lervag/vimtex'
 call vundle#end()
 filetype plugin indent on
 
