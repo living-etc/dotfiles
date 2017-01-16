@@ -1,3 +1,5 @@
+PATH=/usr/local:$PATH
+
 PATH=$PATH:$HOME/.rvm/bin
 source ~/.rvm/scripts/rvm
 
