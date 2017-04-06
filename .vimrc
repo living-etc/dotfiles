@@ -16,6 +16,7 @@ call vundle#begin()
   Plugin 'slim-template/vim-slim'
   Plugin 'lervag/vimtex'
   Plugin 'rodjek/vim-puppet'
+  Plugin 'christoomey/vim-tmux-navigator'
 call vundle#end()
 filetype plugin indent on
 
