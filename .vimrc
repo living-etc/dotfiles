@@ -15,6 +15,7 @@ call vundle#begin()
   Plugin 'janko-m/vim-test'
   Plugin 'slim-template/vim-slim'
   Plugin 'lervag/vimtex'
+  Plugin 'rodjek/vim-puppet'
 call vundle#end()
 filetype plugin indent on
 
