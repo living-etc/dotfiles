@@ -30,7 +30,7 @@ export GOPATH=~/Projects/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
 
-export PATH="$PATH:./node_modules/.bin/"
+export PATH="$PATH:./node_modules/.bin"
 export NVM_DIR="/Users/$USER/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 export NVM_DIR="$HOME/.nvm"
