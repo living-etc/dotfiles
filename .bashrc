@@ -30,13 +30,6 @@ export GOPATH=~/Projects/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
 
-export PATH="$PATH:./node_modules/.bin"
-export NVM_DIR="/Users/$USER/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-export NVM_DIR="$HOME/.nvm"
-
-export PATH="$PATH:./node_modules/.bin/"
-
 # Warning: Homebrew's sbin was not found in your PATH but you have installed
 # formulae that put executables in /usr/local/sbin.
 # Consider setting the PATH for example like so
@@ -44,3 +37,5 @@ export PATH="$PATH:./node_modules/.bin/"
 #
 # This line is added to fix the above output of `brew doctor`
 export PATH="/usr/local/sbin:$PATH"
+
+[ ! -f ~/.bashrc.tbg ] || ~/.bashrc.tbg
