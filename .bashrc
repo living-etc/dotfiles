@@ -36,3 +36,11 @@ export NVM_DIR="/Users/$USER/.nvm"
 export NVM_DIR="$HOME/.nvm"
 
 export PATH="$PATH:./node_modules/.bin/"
+
+# Warning: Homebrew's sbin was not found in your PATH but you have installed
+# formulae that put executables in /usr/local/sbin.
+# Consider setting the PATH for example like so
+#   echo 'export PATH="/usr/local/sbin:$PATH"' >> ~/.bash_profile
+#
+# This line is added to fix the above output of `brew doctor`
+export PATH="/usr/local/sbin:$PATH"
