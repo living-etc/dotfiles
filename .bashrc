@@ -36,4 +36,4 @@ export PATH=$PATH:/usr/local/go/bin
 # This line is added to fix the above output of `brew doctor`
 export PATH="/usr/local/sbin:$PATH"
 
-[ ! -f ~/.bashrc.tbg ] || ~/.bashrc.tbg
+[ ! -f ~/.bashrc.tbg ] || source ~/.bashrc.tbg
