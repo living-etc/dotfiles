@@ -26,9 +26,7 @@ fi
 
 export EDITOR="vim"
 
-export GOPATH=~/Projects/go
-export GOBIN=$GOPATH/bin
-export PATH=$PATH:$GOBIN
+export PATH=$PATH:/usr/local/go/bin
 
 # Warning: Homebrew's sbin was not found in your PATH but you have installed
 # formulae that put executables in /usr/local/sbin.
