@@ -1,6 +1,6 @@
 [user]
   name = Chris Wilson
-  email = chris.wilson@thebeansgroup.com
+  email = chris.wilson@coopdigital.co.uk
 [alias]
   lg = log --graph --decorate --pretty=format:'%C(auto)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset'
   difff = "!f() { \
@@ -11,5 +11,3 @@
   excludesfile = ~/.gitignore
 [push]
   default = nothing
-[commit]
-  template = ~/.gitmessage
