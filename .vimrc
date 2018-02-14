@@ -81,3 +81,6 @@ com! FormatJSON %!python -m json.tool
 
 match ErrorMsg '\s\+$'
 map <leader>c :%s/\s\+$//<CR>
+
+hi clear SpellBad
+hi SpellBad cterm=underline
