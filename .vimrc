@@ -21,10 +21,10 @@ call vundle#end()
 filetype plugin indent on
 
 " Solarized config
-"syntax enable
-"set background=dark
-"colorscheme solarized
-"call togglebg#map("<F5>")
+syntax enable
+set background=dark
+colorscheme solarized
+call togglebg#map("<F5>")
 
 " Test.vim mappings
 nmap <silent> <leader>t :TestNearest<CR>
