@@ -4,7 +4,7 @@ set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-  Plugin 'gmarik/vundle'
+  Plugin 'VundleVim/Vundle.vim'
   Plugin 'elzr/vim-json'
   Plugin 'tpope/vim-cucumber'
   Plugin 'fatih/vim-go'
@@ -17,6 +17,8 @@ call vundle#begin()
   Plugin 'lervag/vimtex'
   Plugin 'rodjek/vim-puppet'
   Plugin 'christoomey/vim-tmux-navigator'
+  Plugin 'hashivim/vim-terraform'
+  Plugin 'fatih/vim-hclfmt'
 call vundle#end()
 filetype plugin indent on
 
