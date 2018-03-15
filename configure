@@ -1,9 +1,7 @@
 #! /bin/bash
 
-for file in '.inputrc' '.bash_profile' '.bashrc' '.vimrc' '.gitconfig' '.tmux.conf' '.gemrc' '.rspec' '.gitmessage' '.gitignore'; do
-  if [ -f ~/$file ];
-  then
-    rm ~/$file
-  fi
-  ln -sf `pwd`/$file ~/$file;
+files=$( find . -name ".*" ! -path . )
+
+for file in ${files}; do
+  ln -sf $(pwd)/"${file}" ~/"${file}";
 done
