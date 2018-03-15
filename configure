@@ -1,7 +1,7 @@
 #! /bin/bash
 
-files=$( find . -name ".*" ! -path . )
+files=$( find . -name ".*" ! -path . -type f -printf "%P\n" )
 
 for file in ${files}; do
-  ln -sf $(pwd)/"${file}" ~/"${file}";
+  ln -sf "$(pwd)/${file}" ~/"${file}";
 done
