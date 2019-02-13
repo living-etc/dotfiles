@@ -1,6 +1,6 @@
 #! /bin/bash
 
-files=$( find . -name ".*" ! -path . -type f -printf "%P\n" )
+files=".alias.bash .bash-prompt.bash .bashrc .gitconfig .gitignore .profile .vimrc"
 
 for file in ${files}; do
   ln -sf "$(pwd)/${file}" ~/"${file}";

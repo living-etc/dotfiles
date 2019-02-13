@@ -3,9 +3,6 @@
   email = chris.wilson@coopdigital.co.uk
 [alias]
   lg = log --graph --decorate --pretty=format:'%C(auto)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset'
-  difff = "!f() { \
-                  git diff --color | sed -E \"s/^([^-+ ]*)[-+ ]/\\1/\" | less -r; \
-                }; f"
 [core]
   editor = vim
   excludesfile = ~/.gitignore
