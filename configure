@@ -1,7 +1,5 @@
 #! /bin/bash
 
-files=$( ls files )
-
-for file in ${files}; do
+for file in $( ls files ); do
   ln -sf $(pwd)/files/${file} ~/.${file};
 done
