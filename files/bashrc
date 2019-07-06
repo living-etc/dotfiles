@@ -1,0 +1,5 @@
+[ -f ~/.envars.bash ]                 && . ~/.envars.bash
+[ -f ~/.alias.bash ]                  && . ~/.alias.bash
+[ -f ~/.git-completion.bash ]         && . ~/.git-completion.bash
+[ -f ~/.bash-prompt.bash ]            && . ~/.bash-prompt.bash
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion

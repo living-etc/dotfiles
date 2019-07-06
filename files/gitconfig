@@ -1,6 +1,6 @@
 [user]
   name = Chris Wilson
-  email = chris.wilson@coopdigital.co.uk
+  email = chris.wilson.7374@gmail.com
 [alias]
   lg = log --graph --decorate --pretty=format:'%C(auto)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset'
 [core]

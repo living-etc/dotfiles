@@ -1,0 +1,130 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Begin Vundle config
+"
+filetype off
+
+" Add Vundle to the runtime path
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+  Plugin 'VundleVim/Vundle.vim'
+
+  """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+  " Begin language plugins
+  Plugin 'elzr/vim-json'
+  Plugin 'fatih/vim-go'
+  Plugin 'ekalinin/Dockerfile.vim'
+  Plugin 'rodjek/vim-puppet'
+  Plugin 'hashivim/vim-terraform'
+  Plugin 'hashivim/vim-packer'
+  Plugin 'PProvost/vim-ps1'
+  " End language plugins
+  """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+  """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+  " Begin functionality plugins
+  Plugin 'altercation/vim-colors-solarized'
+  Plugin 'christoomey/vim-tmux-navigator'
+  Plugin 'janko-m/vim-test'
+  Plugin 'kien/ctrlp.vim'
+  Plugin 'tpope/vim-fugitive'
+  " End functionality plugins
+  """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+call vundle#end()
+filetype plugin indent on
+"
+" End Vundle config
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Begin Vim settings
+"
+set visualbell
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set hlsearch
+set colorcolumn=81
+set nowrap
+set backspace=indent,eol,start
+set autoindent
+set scrolloff=9999
+set ignorecase
+set incsearch
+"
+" End Vim settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Begin filetype handling
+"
+autocmd BufNewFile,BufRead Gemfile set filetype=ruby
+autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
+autocmd BufNewFile,BufRead Puppetfile set filetype=ruby
+autocmd BufNewFile,BufRead *.sh.tpl set filetype=sh
+autocmd BufNewFile,BufRead *.ps1.tpl set filetype=ps1
+autocmd BufNewFile,BufRead Jenkinsfile set filetype=groovy
+autocmd BufNewFile,BufRead *.md setlocal spell textwidth=80 filetype=markdown
+autocmd Filetype gitcommit setlocal spell textwidth=72
+"
+" End filetype handling
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Begin Solarized config
+"
+syntax enable
+set background=dark
+colorscheme solarized
+call togglebg#map("<F5>")
+"
+" End Solarized config
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Begin vim-test config
+"
+nmap <silent> <leader>t :TestNearest<CR>
+nmap <silent> <leader>T :TestFile<CR>
+nmap <silent> <leader>a :TestSuite<CR>
+nmap <silent> <leader>l :TestLast<CR>
+nmap <silent> <leader>g :TestVisit<CR>
+"
+" End vim-test config
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Begin vim-json config
+"
+let g:vim_json_syntax_conceal = 0
+"
+" End vim-json config
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Begin vim-terraform config
+"
+let g:terraform_fmt_on_save = 1
+let g:terraform_align = 1
+let g:terraform_fold_sections = 1
+let g:terraform_remap_spacebar = 1
+"
+" End vim-terraform config
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Begin netrw config
+"
+" Disable the directory banner at the top of netrw
+let g:netrw_banner = 0
+"
+" End netrw config
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Aliases
+com! FormatJSON %!python -m json.tool
+
+match ErrorMsg '\s\+$'
+map <leader>c :%s/\s\+$//<CR>
+
+hi clear SpellBad
+hi SpellBad cterm=underline

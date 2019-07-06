@@ -1,7 +1,7 @@
 #! /bin/bash
 
-files=".alias.bash .bash-prompt.bash .bashrc .gitconfig .gitignore .profile .vimrc"
+files=$( ls files )
 
 for file in ${files}; do
-  ln -sf "$(pwd)/${file}" ~/"${file}";
+  ln -sf $(pwd)/files/${file} ~/.${file};
 done
