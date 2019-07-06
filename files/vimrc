@@ -1,11 +1,21 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Begin Vundle config
 "
+" Disable filetype detection before Vundle loads plugins. Plugins add new
+" files to the runtime path, but these changes will only take efect when
+" filetype detection is switched on - they are not automatically loaded.
+" Enabling filetype detection will not have any effect if it is already
+" enabled. As such, it must first be disabled before plugins are initialised,
+" and re-enabled afterwards.
 filetype off
 
-" Add Vundle to the runtime path
+" Vundle is first installed by cloding it from Github. Once cloned, we add the
+" location to which it was cloned to the runtime path. From now on, Vundle
+" will manage its own updates.
 set rtp+=~/.vim/bundle/Vundle.vim
+
 call vundle#begin()
+  " Manage Vundle with itself, as described above.
   Plugin 'VundleVim/Vundle.vim'
 
   """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -30,6 +40,9 @@ call vundle#begin()
   " End functionality plugins
   """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call vundle#end()
+
+" Now that Vundle has initialised the plugins, we re-enable filetype detection
+" so the new filetypes introduced by the plugins are available.
 filetype plugin indent on
 "
 " End Vundle config
