@@ -133,9 +133,6 @@ let g:netrw_banner = 0
 " End netrw config
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Aliases
-com! FormatJSON %!python -m json.tool
-
 match ErrorMsg '\s\+$'
 map <leader>c :%s/\s\+$//<CR>
 
