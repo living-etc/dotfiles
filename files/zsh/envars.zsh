@@ -1,4 +1,2 @@
 export EDITOR=vim
-export JAVA_HOME=$( /usr/libexec/java_home )
-export GOPATH=${HOME}/go
-export PATH=${HOME}/.rvm/bin:${PATH}
+export GOPATH=${HOME}/src/go

@@ -1,4 +1,0 @@
-[ -f ~/dotfiles/envars.zsh ]    && . ~/dotfiles/envars.zsh
-[ -f ~/dotfiles/alias.zsh ]     && . ~/dotfiles/alias.zsh
-[ -f ~/dotfiles/functions.zsh ] && . ~/dotfiles/functions.zsh
-[ -f ~/dotfiles/hooks.zsh ]     && . ~/dotfiles/hooks.zsh
